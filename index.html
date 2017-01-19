@@ -107,14 +107,14 @@
                     <h1>Is the CA Certificate installed?</h1>
                 </div>
 <center>
-<p id="nettest">
-</p>
-<p id="catest">
-</p>
+<h2 id="nettest" >
+</h2>
+<h2 id="catest">
+</h2>
 
 		 <img id="result" src="https://moodle.ngtech.co.il/ca-test/success.gif" onerror="testSSL();" style="max-width: 130px; display: block; margin: 0 auto">
 </center>
-                <p class="message">To Access the Internet of <strong>######</strong> you need to install the Root CA certificte on your OS or browser.</p>
+                <p class="message">To Access the Internet of <strong>NgTech</strong> safely you need to install the Root CA certificte on your OS or browser.</p>
 
                 <div class="well">
 
@@ -132,6 +132,13 @@
 
                 </div>
 
+                <a href="cert-install.exe" download >
+		<form action="cert-install.exe" method="GET">
+                    <input type="submit" id="submit" value="Download Windows Automated Installer(Not including Firefox)" />
+                </form>
+		</a>
+
+
                 <a href="http://ngtech.co.il/myCA.der" download >
 		<form action="http://ngtech.co.il/myCA.der" method="GET">
                     <input type="submit" id="submit" value="Download CA Certificate(DER format)" />
@@ -143,7 +150,7 @@
                     <input type="submit" id="submit" value="Download CA Certificate(PEM format)" />
                 </form>
 		</a>
-                <p class="credits">Service provided by #######</p>
+                <p class="credits">Service provided by NgTech LTD</p>
             </div>
         </div>
     </div>
