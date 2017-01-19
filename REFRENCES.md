@@ -1,0 +1,11 @@
+ - https://www.kirupa.com/html5/making_http_requests_js.htm
+ - http://date.jsontest.com/?service=ip
+ - http://blog.garstasio.com/you-dont-need-jquery/ajax/
+ - http://stackoverflow.com/questions/10211145/getting-current-date-and-time-in-javascript
+ - http://www.clipartbest.com/clipart-9iz7ndGiE
+ - http://www.clipartbest.com/cliparts/9iz/7nd/9iz7ndGiE.gif
+ - http://www.gifmania.co.uk/Web-Design-Animated-Gifs/Animated-Checks/Green-Tick-Mark-84435.gif
+ - http://www.clipartbest.com/cliparts/dc6/Lg9/dc6Lg9oc9.gif
+ - http://content.presentermedia.com/files/animsp/00007000/7071/stick_figure_check_cancel_md_wm_v2.gif
+ - https://s-media-cache-ak0.pinimg.com/originals/51/8c/fc/518cfc9e3de40195948e2a1f1108a0fe.gif
+ - http://markstudio.co.uk/wp-content/uploads/2013/12/BritishRedCrossGIF6.gif
