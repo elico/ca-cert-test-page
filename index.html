@@ -15,7 +15,7 @@
     <title>Is the CA Certificate installed?</title>
 </head>
 
-<body>
+<body onload="testSSL();">
     <style type="text/css">
         body {
             padding: .2em;
@@ -106,14 +106,15 @@
 
                     <h1>Is the CA Certificate installed?</h1>
                 </div>
-<center>
-<h2 id="nettest" >
+                <center>
+                    <h2 id="nettest">
 </h2>
-<h2 id="catest">
+                    <h2 id="catest">
 </h2>
-
-		 <img id="result" src="https://moodle.ngtech.co.il/ca-test/success.gif" onerror="testSSL();" style="max-width: 130px; display: block; margin: 0 auto">
-</center>
+                    <div id="test-img">
+                    </div>
+                    <!-- <img id="result" src="https://moodle.ngtech.co.il/ca-test/success.gif" onerror="testSSL();" style="max-width: 130px; display: block; margin: 0 auto">-->
+                </center>
                 <p class="message">To Access the Internet of <strong>NgTech</strong> safely you need to install the Root CA certificte on your OS or browser.</p>
 
                 <div class="well">
@@ -126,30 +127,30 @@
                         <li>Windows XP</li>
                         <li>Windows 7\8\10</li>
                         <li>FireFox</li>
-	                <li>Debina\Ubuntu Linux</li>
-	                <li>CentOS Linux</li>
+                        <li>Debina\Ubuntu Linux</li>
+                        <li>CentOS Linux</li>
                     </ul>
 
                 </div>
 
-                <a href="cert-install.exe" download >
-		<form action="cert-install.exe" method="GET">
-                    <input type="submit" id="submit" value="Download Windows Automated Installer(Not including Firefox)" />
-                </form>
-		</a>
+                <a href="cert-install.exe" download>
+                    <form action="cert-install.exe" method="GET">
+                        <input type="submit" id="submit" value="Download Windows Automated Installer(Not including Firefox)" />
+                    </form>
+                </a>
 
 
-                <a href="http://ngtech.co.il/myCA.der" download >
-		<form action="http://ngtech.co.il/myCA.der" method="GET">
-                    <input type="submit" id="submit" value="Download CA Certificate(DER format)" />
-                </form>
-		</a>
+                <a href="http://ngtech.co.il/myCA.der" download>
+                    <form action="http://ngtech.co.il/myCA.der" method="GET">
+                        <input type="submit" id="submit" value="Download CA Certificate(DER format)" />
+                    </form>
+                </a>
 
-		<a href="http://ngtech.co.il/myCA.pem" download >
-                <form action="http://ngtech.co.il/myCA.pem" method="GET">
-                    <input type="submit" id="submit" value="Download CA Certificate(PEM format)" />
-                </form>
-		</a>
+                <a href="http://ngtech.co.il/myCA.pem" download>
+                    <form action="http://ngtech.co.il/myCA.pem" method="GET">
+                        <input type="submit" id="submit" value="Download CA Certificate(PEM format)" />
+                    </form>
+                </a>
                 <p class="credits">Service provided by NgTech LTD</p>
             </div>
         </div>
