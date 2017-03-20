@@ -2,8 +2,7 @@ function processCaTestRequest(e) {
     document.getElementById("catest").innerText = "STARTED CA TEST";
     if (caTest.readyState == 4 && caTest.status == 200) {
         document.getElementById("catest").innerText = "Finished CA TEST SUCCESFULLY";
-        document.getElementById("test-img").innerHTML = '<img id="result" src="https://moodle.ngtech.co.il/ca-test/success.gif" style="max-width: 130px; display: block; margin: 0 auto">'
-        a
+        document.getElementById("test-img").innerHTML = '<img id="result" src="https://moodle.ngtech.co.il/ca-test/success.gif" style="max-width: 130px; display: block; margin: 0 auto">';
     } else {
         document.getElementById("catest").innerText = "ERROR on CA TEST";
         document.getElementById("test-img").innerHTML = '<img id="result" src="http://moodle.ngtech.co.il/ca-test/failure.jpg" style="max-width: 130px; display: block; margin: 0 auto">';
