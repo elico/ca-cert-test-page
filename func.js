@@ -4,9 +4,11 @@ function processCaTestRequest(e) {
         document.getElementById("catest").innerText = "Finished CA TEST SUCCESFULLY";
         document.getElementById("test-img").innerHTML = '<img id="result" src="https://moodle.ngtech.co.il/ca-test/success.gif" style="max-width: 130px; display: block; margin: 0 auto">';
     } else {
-        document.getElementById("catest").innerText = "ERROR on CA TEST";
-        document.getElementById("test-img").innerHTML = '<img id="result" src="http://moodle.ngtech.co.il/ca-test/failure.jpg" style="max-width: 130px; display: block; margin: 0 auto">';
-
+	if (caTest.readyState == 4) {
+            console.log("caTest else ready");
+            document.getElementById("catest").innerText = "ERROR on CA TEST";
+            document.getElementById("test-img").innerHTML = '<img id="result" src="http://moodle.ngtech.co.il/ca-test/failure.jpg" style="max-width: 130px; display: block; margin: 0 auto">';
+        }
     }
 }
 
@@ -24,8 +26,11 @@ function processNetRequest(e) {
         caTest.onreadystatechange = processCaTestRequest;
         caTest.send(encodeURI('date=' + d.toLocaleString()));
     } else {
-        document.getElementById("nettest").innerText = "ERROR on NET TEST";
-        document.getElementById("result").src = "";
+        if (caTest.readyState == 4) {
+            console.log("netTest else ready");
+            document.getElementById("nettest").innerText = "ERROR on NET TEST";
+            document.getElementById("result").src = "";
+	}
     }
 }
 
