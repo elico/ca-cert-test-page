@@ -5,3 +5,7 @@
   Header set Pragma "no-cache"
   Header set Expires "Fri, 11 Jan 1985 01:00:00 GMT"
 </IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule .* https://%{HTTP:Host}%{REQUEST_URI} [L,R=permanent]
